@@ -1,0 +1,36 @@
+/* Navbar Mobile and Tablet */
+@media (max-width:1024px){
+    .navbar{
+        border: 1px solid red;
+    }
+    .navbar .navbar-brand img , .offcanvas img{
+        width:8rem;
+        height:2rem;
+    }
+    .navbar .offcanvas-link{
+        width: 0 !important;
+    }
+    .navbar i{
+        display: flex;
+        font-size: 25px;
+        transition: .1s all ease-in-out;
+        border: 1px solid transparent;
+    }
+    .offcanvas .btn-close{
+        transition: .1s all ease-in-out;
+        border: 1px solid transparent !important;
+        outline: none !important;
+    }
+    .navbar i:active , .offcanvas .btn-close:active{
+        transform: scale(.8);
+        border: 1px solid #406edad0;
+        border-radius: 2px;
+    }
+    .offcanvas .offcanvas-header{
+        box-shadow: 0 0 10px #0000001f;
+    }
+    .offcanvas .loginBTN , .offcanvas .signBTN{
+        width: 70%;
+        text-align: center;
+    }
+}
